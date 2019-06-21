@@ -1,0 +1,32 @@
+This simple script will grab followers off of github.
+
+It'll output in json as the following:
+
+{
+    "octocat": {
+        "myhduck": {
+            "SuriyaaKudoIsc": [
+                "jovenmarlo",
+                "hunslater",
+                "jmg",
+                "pnommensen",
+                "matiasinsaurralde"
+            ],
+            "mitra97": [
+                "vparthas",
+                "teejas"
+            ]
+        },
+
+In this case, we're looking at "octocat" who has a follower called "myhduck".
+"myhduck" has a follower called "SuriyaaKudoIsc" who has the a maximum of five
+followers: "jovenmarlo", "hunslater", "jmg", "pnommensen", "matiasinsaurralde"
+
+As we can see with "mitra97", they only have two followers, so those are shown.
+
+
+To run this, simply place it on a php enabled webserver that has php-curl and
+php-json installed and point your web browser to it.
+
+If that user exists, then you'll be presented with a download option which
+contains more full version of the json file.
